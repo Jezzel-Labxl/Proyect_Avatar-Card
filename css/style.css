@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(../img/avatar-2-scaled.webp);
+  background: url(../img/avatar-2-scaled.webp) no-repeat center fixed;
   background-size: cover;
   overflow: hidden;
   display: flex;
@@ -20,7 +20,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 25%, transparent);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 30%, transparent);
   transition: 0.5s;
   z-index: 1;
 }
@@ -83,6 +83,7 @@ body::before {
   box-sizing: border-box;
   transition: 0.5s;
   z-index: 2;
+  overflow: auto;
 }
 .card .details .imgcontent {
   color: #fff;
